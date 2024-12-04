@@ -96,3 +96,29 @@ main {
 .oculto {
     display: none;
 }
+
+/* Estilos para moviles*/
+@media (max-width: 450px) {
+    main {
+        flex-direction: column; 
+        gap: 2rem; 
+    }
+
+    #catalogo {
+        width: 100%; 
+    }
+
+    #carrito {
+        width: 100%; 
+        min-width: 100%; 
+        margin-top: 1rem;
+    }
+
+    .tarjeta {
+        width: calc(50% - 1rem); 
+    }
+
+    .tarjeta button {
+        width: 100%; 
+    }
+}
