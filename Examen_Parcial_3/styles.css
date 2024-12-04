@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f7f7f7;
+}
+
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+#catalogo {
+    width: 70%; 
+}
+
+#carrito {
+    width: 28%; 
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-height: 500px; 
+    overflow-y: auto; 
+}
+
+.frutas-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    width: calc(25% - 1rem);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.tarjeta button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.tarjeta button:hover {
+    background-color: #218838;
+}
+
+#vaciar-carrito {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#vaciar-carrito:hover {
+    background-color: #c82333;
+}
+
+#total {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+#descuento {
+    color: green;
+    font-weight: bold;
+}
+
+.oculto {
+    display: none;
+}
